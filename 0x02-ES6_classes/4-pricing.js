@@ -36,12 +36,12 @@ export default class Pricing {
     this._currency = currency;
   }
 
-  // methode that returns the attributes in the following format amount currency_name (currency_code)
+  // methode that returns the attributes in the following format amount currency_name
   displayFullPrice() {
     return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
 
-  // static method that accept two arguments: amount (Number), conversionRate (Number). and return the amount multiplied by the conversion rate.
+  // static method that accept two arguments: amount (Number), conversionRate (Number)
   static convertPrice(amount, conversionRate) {
     if (typeof amount !== 'number') {
       throw new TypeError('Amount must be a number');
