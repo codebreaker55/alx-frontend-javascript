@@ -8,6 +8,11 @@ export default class EVCar extends Car {
 
   // using eslint-disable-next-line class-methods-use-this
   cloneCar() {
-    return new Car();
+    return new EVCar(
+      this.brand,
+      this.motor,
+      this.color,
+      this._range,
+    );
   }
 }
