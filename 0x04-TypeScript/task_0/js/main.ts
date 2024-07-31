@@ -8,8 +8,8 @@ interface Student {
 
 // Create two students
 const student1: Student = {
-  firstName: 'Belal',
-  lastName: 'ismail',
+  firstName: 'billy',
+  lastName: 'theBest',
   age: 25,
   location: 'New York'
 };
